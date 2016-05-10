@@ -35,6 +35,10 @@
     <%= f.label :minutes_to_cook %><br>
     <%= f.number_field :minutes_to_cook %>
   </div>
+  <div class="field" hidden>
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id, value: current_user.id %>
+ </div>
   <div class="actions">
     <%= f.submit %>
   </div>
